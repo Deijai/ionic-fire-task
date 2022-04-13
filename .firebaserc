@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ionicfiretask": {
+      "hosting": {
+        "app": [
+          "ionicfiretask"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ionicfiretask"
+  }
+}

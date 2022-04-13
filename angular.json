@@ -31,7 +31,10 @@
                 "output": "./svg"
               }
             ],
-            "styles": ["src/theme/variables.scss", "src/global.scss"],
+            "styles": [
+              "src/theme/variables.scss",
+              "src/global.scss"
+            ],
             "scripts": [],
             "aot": false,
             "vendorChunk": true,
@@ -142,11 +145,22 @@
               "devServerTarget": "app:serve:ci"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "app:build:production",
+            "firebaseProject": "ionicfiretask",
+            "firebaseHostingSite": "ionicfiretask"
+          }
         }
       }
     }
   },
   "cli": {
+    "analytics": "aa307571-2956-45fc-b4ec-a0f77111d0a0",
     "defaultCollection": "@ionic/angular-toolkit"
   },
   "schematics": {
